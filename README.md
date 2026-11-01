@@ -14,7 +14,7 @@ question and shows the **right formula** to use, grouped under **G-CATS**:
 | **T** | Trigonometry | Trigonometric Functions, Solution of Triangles |
 | **S** | Statistics | Permutation & Combination, Probability Distribution, Index Numbers |
 
-This folder is the **web app (full version)**. The mobile app (AI-generated videos) comes next. See [`docs/DESIGN.md`](docs/DESIGN.md).
+This repo is the **web app (full version)**. The mobile app (AI-generated videos) comes next. See [`docs/DESIGN.md`](docs/DESIGN.md).
 
 ## Features (v0.1)
 
@@ -30,18 +30,17 @@ This folder is the **web app (full version)**. The mobile app (AI-generated vide
 It's a static site with no build step. ES modules need a web server (not `file://`):
 
 ```bash
-cd mathui
 npm start            # → http://localhost:8080  (python3 http.server)
 npm test             # detector + data tests (Node 18+)
 npm run tag -- "Find the equation of the tangent to the curve y = x² at (1, 1)."
 ```
 
-It also works on GitHub Pages as is (`/mathui/`).
+It also works on GitHub Pages as is (Settings → Pages → deploy from `main`, root folder).
 
 ## Project layout
 
 ```
-mathui/
+.
 ├── index.html
 ├── css/mathui.css
 ├── js/
